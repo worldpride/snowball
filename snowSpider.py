@@ -6,7 +6,7 @@ import os
 import threading
 import confRead
 
-
+#get *.html 
 def get_html(url):
     send_headers = {
         'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36',
@@ -20,7 +20,7 @@ def get_html(url):
     html = resp.read()
     return html    
 
-
+#filter portfolio info from html
 def get_portfolio(mainUrl,code):
     url = mainUrl + code
     #print url

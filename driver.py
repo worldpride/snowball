@@ -4,7 +4,7 @@ import threadPool
 import snowSpider
 import golobal_parameters
 
-
+#工作函数
 def test_job(mainUrl,zhcode): 
     try: 
         snowSpider.get_portfolio(mainUrl,zhcode) 

@@ -27,7 +27,8 @@ class Worker(Thread):
                 break 
             except: 
                 print'worker[%2d]'%self.id, sys.exc_info()[:2] 
-                   
+				
+# working threads manager                   
 class WorkerManager: 
     def __init__( self, num_of_workers=10, timeout =1): 
         self.workQueue = Queue.Queue() 
